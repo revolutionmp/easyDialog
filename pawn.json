@@ -1,9 +1,9 @@
 {
-	"user": "Awsomedude",
+	"user": "revolutionmp",
 	"repo": "easyDialog",
 	"entry": "test.pwn",
 	"output": "test.amx",
 	"dependencies": [
-		"openmultiplayer/omp-stdlib"
+		"pawn-lang/samp-stdlib"
 	]
 }

@@ -1,6 +1,16 @@
-# easyDialog
+## easyDialog (Revolution Multiplayer Mod)
+**PEMBERITAHUAN: INI ADALAH REPOSITORI HASIL MODIFIKASI**
 
-### Note: You must use https://github.com/openmultiplayer/omp-stdlib otherwise, you'll get more warnings!!
+Versi `easyDialog` ini adalah hasil *fork* dari repositori asli milik [Awsomedude/easyDialog](https://github.com/Awsomedude/easyDialog). Modifikasi ini dikelola oleh tim **Revolution Multiplayer** untuk menambahkan dukungan dan perbaikan fitur yang spesifik.
+
+### Keunggulan Versi Modifikasi Ini:
+
+* ✅ **Dukungan Penuh SA-MP 0.3.7-R2**
+Include ini sekarang kompatibel penuh dengan `samp-stdlib` standar yang digunakan pada server SA-MP versi 0.3.7-R2, menghilangkan *warning* dan memastikan fungsionalitas yang modern.
+* ✅ **Perbaikan Bug Klien Android**
+Memperbaiki masalah krusial di mana dialog akan muncul kosong (*empty dialog*) saat ditampilkan kepada pemain yang menggunakan klien SA-MP Android 0.3.7.
+
+-----
 
 The purpose of this include is to make dialogs easier to use in general.
 

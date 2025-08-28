@@ -11,6 +11,7 @@
 	Updated by Southclaws 2017-10-13 to add include guard.
 	Updated by MichelDev 2023-02-24 new style and fix error HidePlayerDialog (open-mp RC2)
 	Updated by adib-yg 2023-11-15 to add the DIALOG_STYLE tag.
+	Updated by rizkyana-id 2025-08-28 to fixing empty dialog for android 0.3.7 client support.
 */
 
 #if defined _easyDialog_included
@@ -64,7 +65,11 @@ stock Dialog_Close(playerid) {
 	s_DialogName[playerid]{0} = 0;
 	s_DialogOpened[playerid] = false;
 
-	return HidePlayerDialog(playerid);
+	#if !defined easyDialog_Mobile
+		return HidePlayerDialog(playerid);
+	#else
+		return 1;
+	#endif
 }
 
 stock Dialog_Open(playerid, const function[], DIALOG_STYLE:style, const caption[], const info[], const button1[], const button2[], {Float,_}:...) {
@@ -133,7 +138,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 		strcat(string, "dialog_");
 		strcat(string, s_DialogName[playerid]);
 
-		Dialog_Close(playerid);
+		#if !defined easyDialog_Mobile
+			Dialog_Close(playerid);
+		#endif
 
 		if ((s_Public == -1) || (CallLocalFunction("OnDialogPerformed", "dsdd", playerid, string[7], response, funcidx(string) != -1))) {
 	 		CallLocalFunction(string, "ddds", playerid, response, listitem, (!inputtext[0]) ? ("\1") : (inputtext));
