@@ -1,4 +1,4 @@
-# easyDialog (Revolution Multiplayer Mod)
+## easyDialog (Revolution Multiplayer Mod)
 **PEMBERITAHUAN: INI ADALAH REPOSITORI HASIL MODIFIKASI**
 
 Versi `easyDialog` ini adalah hasil *fork* dari repositori asli milik [Awsomedude/easyDialog](https://github.com/Awsomedude/easyDialog). Modifikasi ini dikelola oleh tim **Revolution Multiplayer** untuk menambahkan dukungan dan perbaikan fitur yang spesifik.
